@@ -3,7 +3,7 @@
 import time
 from random import randint
 # EU DIVIDI AS FRASES PARA IMPRIMIR COM TEMPORIZAÇÕES DIFERENTES
-frase1 = 'JOGO DA ADVINHAÇÃO\n\nEstou pensando em um número entre 0 e 10.\nSerá que você consegue acertar qual é?'
+frase1 = 'JOGO DA ADVINHAÇÃO\n\nEstou pensando em um número entre 1 e 10.\nSerá que você consegue acertar qual é?'
 frase2 = '\nApós cada palpite eu te dou uma dica.'
 frase3 = '\nVALENDOOO...'
 palpite = 0 # VAI CONTAR QUANTAS VEZES O USUÁRIO PALPITOU ATÉ ACERTAR
@@ -39,7 +39,7 @@ print('-=' * 44)
 time.sleep(1)
 # NÚMERO ALEATÓRIO DO COMPUTADOR
 jogo = randint(1, 10)
-resp = int(input('\nDigite um número inteiro entre 0 e 10: ')) # TENTATIVA 1 DO USUÁRIO
+resp = int(input('\nDigite um número inteiro entre 1 e 10: ')) # TENTATIVA 1 DO USUÁRIO
 palpite += 1 # CONTADOR RECEBE MAIS 1 
 while True: # LOOPING ENQUANTO O USUÁRIO NÃO ACERTAR 
    if resp > jogo: # DÁ UMA DICA PARA O USUÁRIO
